@@ -42,6 +42,7 @@
 <script type="text/javascript" src="portfolio/scripts/jquery.vintageTxt.js"></script>
 <script type="text/javascript" src="portfolio/scripts/jquery.fancybox.pack.js"></script>
 <script type="text/javascript" src="portfolio/scripts/findemor.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.min.js"></script>
 
 <LINK REL="SHORTCUT ICON" HREF="portfolio/favicon.ico">
 
@@ -266,34 +267,66 @@
 	        	</div>
 	        	<div id="skillpersonal" class="skillblock">
 	        	</div>
-	        	<h3 id="skplattitle">Platforms</h3>
+	        	<h3 id="skplattitle">Experience</h3>
 	        	<div id="skillplatforms" class="skillblock">
-	        	
-	        		<ul>
-	        			<li class="skmobile" title="mobile"><div class="skpct" style="width:80%;"></div><div class="skimg"></div></li>
-	        			<li class="skdesktop" title="desktop"><div class="skpct" style="width:90%;"></div><div class="skimg"></div></li>
-	        			<li class="skweb" title="web"><div class="skpct" style="width:90%;"></div><div class="skimg"></div></li>
-	        			<li class="skcloud" title="cloud"><div class="skpct" style="width:70%;"></div><div class="skimg"></div></li>
-	        			<li class="skapple" title="apple"><div class="skpct" style="width:70%;"></div><div class="skimg"></div></li>
-	        			<li class="skwindows" title="windows"><div class="skpct" style="width:90%;"></div><div class="skimg"></div></li>
-	        			<li class="sklinux" title="linux"><div class="skpct" style="width:60%;"></div><div class="skimg"></div></li>
-	        			<li class="skandroid" title="android"><div class="skpct" style="width:90%;"></div><div class="skimg"></div></li>
-	        		</ul>
-	        	
+						<canvas id="chartExperience" width="200" height="200"></canvas>
+						<script>
+							var ctx = document.getElementById("chartExperience");
+							var color = Chart.helpers.color;
+							let data = {
+								labels: ['Microservices', 'REST APIs', 'Frontend', 'Backend', 'Cloud', 'Data Science', 'Project Management'],
+								datasets: [{
+									label: 'Level',
+									backgroundColor: '#00a99d80',
+									borderColor: '#00a99d',
+									pointBackgroundColor: '#00a99d80',
+									data: [8,10,6,9,9,7,8]
+								}]
+							};
+							var myRadarChart = new Chart(ctx, {
+								type: 'radar',
+								data: data,
+								options: {
+									scale: {
+										ticks: {
+											min: 0, max: 10
+										}
+									},
+                    				maintainAspectRatio: false,
+								}
+							});
+						</script>	        	
 	        	</div>
 	        	<h3 id="sktechtitle">Technologies</h3>
 	        	<div id="skilltechs" class="skillblock">
-	        	
-	        		<ul>
-	        			<li class="skcss">CSS<div class="skpct" style="width:80%;"></div><div class="skimg"></div></li>
-	        			<li class="skhtml">HTML<div class="skpct" style="width:90%;"></div><div class="skimg"></div></li>
-	        			<li class="sknet">.NET<div class="skpct" style="width:95%;"></div><div class="skimg"></div></li>
-	        			<li class="skjava">Java<div class="skpct" style="width:80%;"></div><div class="skimg"></div></li>
-	        			<li class="skjs">JS<div class="skpct" style="width:75%;"></div><div class="skimg"></div></li>
-	        			<li class="sksql">SQL<div class="skpct" style="width:80%;"></div><div class="skimg"></div></li>
-	        			<li class="skphp">PHP<div class="skpct" style="width:50%;"></div><div class="skimg"></div></li>
-	        			<li class="skunity">Unity<div class="skpct" style="width:40%;"></div><div class="skimg"></div></li>
-	        		</ul>
+						<canvas id="chartTech" width="400" height="210" style="margin-left: 50px; padding-top: 15px"></canvas>
+						<script>
+							var ctx = document.getElementById("chartTech");
+							let bardata = {
+								labels: [ "HTML", "C# .NET", "NodeJS", "SQL", "MongoDB", "ELK", "Unity"],
+								datasets: 
+								[
+									{
+										label:"My skill",
+										data:[80,90,95,75,85,80,60],
+										fill:false,
+										backgroundColor:["rgba(255, 99, 132, 0.2)","rgba(255, 159, 64, 0.2)","rgba(255, 205, 86, 0.2)","rgba(75, 192, 192, 0.2)","rgba(54, 162, 235, 0.2)","rgba(153, 102, 255, 0.2)","rgba(201, 203, 207, 0.2)"],
+										borderColor:["rgb(255, 99, 132)","rgb(255, 159, 64)","rgb(255, 205, 86)","rgb(75, 192, 192)","rgb(54, 162, 235)","rgb(153, 102, 255)","rgb(201, 203, 207)"],
+										borderWidth:3
+									}
+								]
+							};
+							var myBarChart = new Chart(ctx, {
+								type: 'horizontalBar',
+								data: bardata,
+    							maintainAspectRatio: false,
+								options: {
+responsive: false, 
+    							maintainAspectRatio: false,
+									scales:{xAxes:[{ticks:{beginAtZero:true}}]},
+        							legend: {display: false} }
+								});
+						</script>	 
 	        	
 	        	</div>
 	        	</div>
