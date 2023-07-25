@@ -551,7 +551,7 @@ footer .theme-by {
     display: none;
   }*/
   .intro-header .page-heading {
-    padding: 37px 0;
+    padding: 37px 0 !important;
   }
   .intro-header .page-heading h1 {
     margin-top: 0;
