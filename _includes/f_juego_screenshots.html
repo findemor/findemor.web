@@ -1,0 +1,25 @@
+
+## Screenshots
+
+<div class="screenshot-gallery">
+
+  <div class="grid">
+  {% assign id = page.id %}
+  {% assign folder = "/assets" | append: id | append: "/screenshots/" %}
+  {% assign fulls = site.static_files | where_exp: "file", "file.path contains folder" %}
+  {% for f in fulls %}
+    {% if f.extname == '.jpg' or f.extname == '.jpeg' or f.extname == '.png' or f.extname == '.gif' or f.extname == '.webp' %}
+      <a class="thumb" href="{{ f.path | relative_url }}" data-full="{{ f.path | relative_url }}" role="button" aria-label="Abrir captura {{ forloop.index }}">
+        <img src="{{ f.path | relative_url }}" alt="{{ page.title | default: id }} screenshot {{ forloop.index }}" loading="lazy" decoding="async">
+      </a>
+    {% endif %}
+  {% endfor %}
+  </div>
+
+  <div class="lightbox" id="lightbox-100-challenge" hidden>
+    <button class="close" aria-label="Cerrar">&times;</button>
+    <img alt="Screenshot" src="">
+  </div>
+
+  <script src="{{ '/assets/js/screenshot-gallery.js' | relative_url }}"></script>
+</div>

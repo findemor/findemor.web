@@ -1,0 +1,21 @@
+#Please use the main menu items under the "name"
+main:
+  
+  - name: Únete
+    url: "https://patreon.com/findemor"
+  - name: Cursos
+    url: /
+    submenu:
+      - name: Curso Godot 4 Gratis
+        url: /curso-godot-4-gratis.html
+  - name: Juegos
+    url: /juegos.html
+  - name: Sobre mí
+    url: "/about-me.html"
+  - name: Contacto
+    url: /contact.html
+    
+############## Bottom menu ###############
+bottom:
+  - name: Política de privacidad
+    link: "/privacy-policy.html"

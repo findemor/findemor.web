@@ -1,0 +1,38 @@
+---
+layout: default_2
+---
+
+{% include header_2.html %}
+<section class="recurso-single">
+	<div class="container">
+		<div class="row justify-content-center">
+          {{page.content}}
+		</div>
+	</div>
+</section>
+
+
+<section class="section related-project">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12 text-center">
+				<h3 class="mb-5">Related Projects</h3>
+			</div>
+		</div>
+		<div class="row">
+            {% for recurso in site.recursos limit:"3" %}
+			<div class="col-lg-4">
+				<div class="recurso-block text-center border-0 ">
+				    <img src="{{recurso.thumbnail | relative_url}}" class="img-fluid" alt="{{recurso.title}}"/>
+				    <a class="card-img-overlay" href="{{recurso.url}}">
+				      <h5 class="card-title text-white mb-0">{{recurso.title}}</h5>
+				      <p class="card-text text-white text-uppercase text-sm">{{recurso.category}}</p>
+				    </a>
+				</div>
+			</div>
+            {% endfor %}
+		</div>
+	</div>
+</section>
+
+{% include call_to_action.html %}

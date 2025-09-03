@@ -1,0 +1,35 @@
+<head>
+  <meta charset="utf-8">
+  <title>{% if page.title %}{{page.title}}{% else %}{{site.title}}{% endif %}</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="{%if page.description%}{{page.description}}{%else%}{{site.description}}{%endif%}">
+  
+  <!-- theme meta -->
+  <meta name="theme-name" content="dizer-jekyll" />
+    
+  {% if site.author %}
+  <meta name="author" content="{{ . }}">
+  {% endif %}
+
+  {% for css in site.data.plugins.css %}
+  <link rel="stylesheet" href="{{ css | relative_url }}">
+  {% endfor %}
+
+  <!-- Cookie Consent (Osano) -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+
+  <!-- Font Awesome Free (CDN) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <!-- Main Stylesheet -->
+  <link href="{{ '/assets/scss/style.css' | relative_url }}" rel="stylesheet">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="{{ '/assets/images/favicon-64x64.png' | relative_url }} " type="image/x-icon">
+  <link rel="icon" type="image/png" href="{{ '/assets/images/favicon-16x16.png' | relative_url }}" sizes="16x16">
+  <link rel="icon" type="image/png" href="{{ '/assets/images/favicon-32x32.png' | relative_url }}" sizes="32x32">
+  <link rel="icon" type="image/png" href="{{ '/assets/images/favicon-64x64.png' | relative_url }}" sizes="64x64">
+  
+</head>

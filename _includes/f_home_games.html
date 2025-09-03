@@ -1,0 +1,35 @@
+<!-- PortfoliO Start -->
+<section class="pt200 section recurso-2">
+  <div class="container">
+    <div class="row games">
+      <div class="col-lg-10">
+        <span class="h5 text-color-hero text-uppercase">
+          Mis juegos
+        </span>
+        <h3 class="mb-4 mt-2">Hago juegos con Godot 4, y <strong>comparto todo el proceso</strong> detrás de cada uno. <br>Aquí puedes ver mis últimos proyectos, probarlos o descubrir como los hice. <br>Comparto todo, desde los desafíos técnicos y emocionales, hasta las descargas y los ingresos, <strong>con total transparencia</strong>. </h3>
+      </div>
+    </div>
+
+    <div class="d-flex flex-wrap align-items-center justify-content-between mb-5">
+      <div class="btn-group btn-group-toggle " data-toggle="buttons">
+
+        <label class="btn border-0 active">
+          <input type="radio" name="shuffle-filter" value="all" checked="checked" />Todos
+        </label>
+        {% assign categories = site.juegos| map: 'categories' | join: ',' | split: ',' | uniq %}
+        {% for category in categories %}
+        <label class="btn border-0">
+          <input type="radio" name="shuffle-filter"
+            value="{{ category | downcase | slugify }}" />{{ category | capitalize }}
+        </label>
+        {% endfor %}
+      </div>
+      <a href="{{ '/juegos.html' | relative_url }}" class="btn btn-outline-primary">Juegos</a>
+    </div>
+
+    <div class="row shuffle-wrapper recurso-gallery" data-limit="3">
+      {% include f_home_juegos_loop.html %}
+    </div>
+  </div>
+</section>
+<!-- Recurso End -->

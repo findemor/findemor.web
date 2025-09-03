@@ -1,0 +1,79 @@
+<!-- Footer section start -->
+<footer class="section bg-secondary position-relative pb-0">
+	<!--<img src="{{'/assets/images/bg/footer-bg.png' | relative_url}}" alt="" class="overlay-shape">-->
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<div class="footer-widget  mb-5 mb-lg-0">
+					<h4 class="font-weight-bold text-white mb-3">¿Otros sitios?</h4>
+					{{site.footer_content | markdownify}}
+
+					<ul class="list-inline socials-links">
+						{% for social in site.social %}
+						<li class="list-inline-item mb-2">
+							<a target="_blank" href="{{social.link}}" class="active"><i class="{{social.icon}}"></i></a>
+						</li>
+						{% endfor %}
+					</ul>
+				</div>
+			</div>
+
+
+		</div>
+	</div>
+
+	<div class="footer-btm ">
+		<div class="container border-top py-4 mt-5">
+			<div class="row align-items-center justify-content-md-between">
+				<div class="col-12 col-lg-4">
+					<div class="text-center text-lg-left "> <span>{{ site.copyright }}</span></div>
+				</div>
+				<div class="col-lg-4 text-center col-12">
+					<a href="{{site.baseurl}}">
+						<img src="{{site.logo | relative_url}}" alt="{{site.title}}" class="img-fluid">
+					</a>
+				</div>
+				<div class="col-lg-4 col-12">
+					<div class="text-center text-lg-right">
+						{% for menu in site.data.navigation.bottom %}
+						<a href="{{menu.link | relative_url }}">{{menu.name}} {% unless forloop.last %} <span class="mx-2">|</span> {% endunless %}</a>
+						{% endfor %}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+<!-- Footer End -->
+
+<script src="{{site.google_map_api}}"></script>
+
+<!-- JS Plugins -->
+{% for js in site.data.plugins.js %}
+<script src="{{ js | relative_url }}"></script>
+{% endfor %}
+
+<!-- Main Script -->
+<script src="{{ '/assets/js/script.js' | relative_url }}"></script>
+
+<!-- Cookie Consent (Osano) -->
+<script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js"></script>
+<script>
+  window.addEventListener('load', function(){
+    if (!window.cookieconsent) return;
+    window.cookieconsent.initialise({
+      palette: {
+        popup: { background: '#141c28', text: '#ffffff' },
+        button: { background: '#ffda37', text: '#141c28' }
+      },
+      theme: 'classic',
+      position: 'bottom-right',
+      content: {
+        message: 'Este sitio web utiliza cookies para mejorar la experiencia.',
+        dismiss: 'Aceptar',
+        link: 'Política de privacidad',
+        href: '{{ "/privacy-policy.html" | relative_url }}'
+      }
+    });
+  });
+</script>

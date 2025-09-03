@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include f_head.html %}
+
+<body data-spy="scroll" data-target="#ftco-navbar-spy" data-offset="0" class="">
+
+   {% include f_header.html %}
+   {% include f_page_header_slim.html %}
+   <div class="row justify-content-center">
+      <div class="col-lg-6 mx-auto">
+         <div class="juego-content">
+         {{content}}
+         </div>
+      </div>
+   </div>
+   {% include f_footer.html %}
+
+</body>
+
+</html>

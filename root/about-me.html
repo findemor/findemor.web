@@ -1,0 +1,176 @@
+---
+layout: default
+permalink: "/about-me.html"
+title: "Sobre mí – findemor"
+description: "Creador de videojuegos y formador. Comparto cursos gratuitos, devlogs y recursos para aprender Godot 4."
+---
+{% include f_page_header_slim.html %}
+
+<section class="about-banner">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-6">
+				<h4 class="text-color">Sobre mí...</h4>
+				<h3>soy Findemor,</h3>
+				<p class="text-sm-2 text-black" style="padding-top: 30px;">
+					<strong>desarrollo videojuegos como hobby</strong>, <br>y <strong>creo contenido en Youtube</strong> sobre desarrollo de videojuegos 
+					mostrando mi experiencia.</p>	
+				<p class="text-sm-2 text-black">
+					A lo largo de mi vida he desarrollado muchos juegos e incluso he publicado algunos, 
+					en distintas plataformas. </p>
+				<p class="text-sm-2 text-black">
+					La vida pasa rápido, así que desde hace algunos años decidí tomarmelo más en serio, 
+					y a compatir todo lo que aprendo en el el proceso. </p>
+			</div>
+			<div class="col-lg-6 d-flex justify-content-center align-items-center">
+				<img src="/assets/images/banner/findemor-about-me.png" alt="Findemor" class="img-fluid" style="height:400px;" />
+			</div>
+			<div class="col-12">
+				<h4 style="padding-top: 100px;">¿Quieres saber más?</h4>
+				<p class="text-sm-2">
+					Me gradué en ingeniería informática de sistemas en la Universidad Rey Juan Carlos de Madrid, 
+					y mi background es de programador, me encanta programar, aunque a lo largo de los años he tenido distintos perfiles: 
+					desarrollo fullstack web y móvil, gestión de proyectos y dirección de innovación.</p>
+				<p class="text-sm-2">
+					Me gusta mucho aprender cosas nuevas, pero el desarrollo de videojuegos es algo 
+					a lo que siempre vuelvo.</p><p class="text-sm-2"> 				
+					Trabajo en una empresa de desarrollo de software, soy padre y amo de casa, ¡además de otras etiquetas que requiere tiempo mantener!.</p><p class="text-sm-2">
+					Así que al igual que te pasará a ti, eso no me deja mucho tiempo para dedicar a un hobby... <br>
+					un tiempo que además se reparte entre el desarrollo de juegos y la creación de contenido en YouTube. <br>
+					Lo que quiero decir es que por lo general avanzo lento. </p><p class="text-sm-2"> 	
+					Pero eso si, te prometo que hago cuanto puedo, y que estoy ¡muy motivado!. </p>
+				<p class="text-sm-2">
+					Supongo que por esta falta de tiempo trato de que <strong>mis juegos y mis contenidos vayan al grano</strong>, 
+					y sean fáciles de entender. No es solo una cuestión de desarrollo, es <strong>respeto por el tiempo de los demás.</strong> </p>
+				<p class="text-sm-2">
+					Padezco un grave síndrome del impostor, me gusta dibujar (aunque no se me da bien), 
+					también me gustan los loros, la ciencia ficción, las historias de fantasía épica, 
+					la naturaleza, meditar, la música indie y los juegos de estrategia, farmeo y exploración de mundos imposibles. </p>
+				<p class="text-sm-2">
+					Y si quieres que nos conozcamos mejor... pues, seguro que encontrás la manera: <br>
+					esta web está llena de enlaces de todo tipo <strong>donde podemos encontrarnos.</strong></p> 
+				<p class="text-sm-2">Nos vemos!</p>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- Skill Start -->
+<!--<section class="section skill">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-5">
+				<span class="h5 text-color text-uppercase">
+					our skill
+				</span>
+				<h3 class="mb-4 mt-2">We are Design & Development Team.</h3>
+				<p class="mb-0">Dolor sit amet consectetur elit sed do eiusmod tempor incididunt labore et dolore magna aliqua enim minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip commodo consequat.duis aute irure.sint occaecat cup
+				idatat non proident sunt.</p>
+			</div>	
+
+			<div class="col-lg-6 offset-lg-1 mb-5">
+				<div class="progress-block skill-2-bg">
+					<h6 class="text-uppercase">Branding</h6>
+					<div class="progress">
+					  <div class="progress-bar progress-bar-striped" data-percent="85">
+					  	<span class="skill-number">85</span>
+					  </div>
+					</div>
+				</div>
+					
+				<div class="progress-block skill-2-bg">
+					<h6 class="text-uppercase">Consulting</h6>
+					<div class="progress">
+					  	<div class="progress-bar progress-bar-striped" data-percent="90">
+					  		<span class="skill-number">90</span>
+					  	</div>
+					</div>
+				</div>
+					
+				<div class="progress-block skill-2-bg">
+					<h6 class="text-uppercase">Business</h6>
+					<div class="progress">
+					  	<div class="progress-bar progress-bar-striped" data-percent="75">
+					  		<span class="skill-number">75</span>
+					  	</div>
+					</div>
+				</div>
+				<div class="progress-block skill-2-bg">
+					<h6 class="text-uppercase">Promotion</h6>
+					<div class="progress mb-0">
+					  	<div class="progress-bar progress-bar-striped" data-percent="90">
+					  		<span class=" skill-number">90</span>
+					  	</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>-->
+<!-- Skill End -->
+
+<section class="about-gallery">
+	<div class="container screenshot-gallery">
+		<div class="row">
+			<div class="col-lg-12">
+
+				<!-- GALERIA -->
+
+				<h3>Galería</h3>
+
+				<div class="grid">
+				{% assign folder = "/assets/images/about/galeria" %}
+				{% assign fulls = site.static_files | where_exp: "file", "file.path contains folder" %}
+				{% for f in fulls %}
+					{% if f.extname == '.jpg' or f.extname == '.jpeg' or f.extname == '.png' or f.extname == '.gif' or f.extname == '.webp' %}
+					<a class="thumb" href="{{ f.path | relative_url }}" data-full="{{ f.path | relative_url }}" role="button" aria-label="Abrir imagen {{ forloop.index }}">
+						<img src="{{ f.path | relative_url }}" alt="{{ page.title | default: id }} screenshot {{ forloop.index }}" loading="lazy" decoding="async">
+					</a>
+					{% endif %}
+				{% endfor %}
+				</div>
+
+				<div class="lightbox" id="lightbox-about-me-galeria" hidden>
+					<button class="close" aria-label="Cerrar">&times;</button>
+					<img alt="Screenshot" src="">
+				</div>
+
+			</div>
+		</div>
+
+		
+		<div class="row" style="margin-top:60px">
+			<div class="col-lg-12">
+				<!-- LOGOS -->
+
+				<h3>Logos</h3>
+
+				<div class="screenshot-gallery">
+				<div class="grid">
+				{% assign folder = "/assets/images/about/logos" %}
+				{% assign fulls = site.static_files | where_exp: "file", "file.path contains folder" %}
+				{% for f in fulls %}
+					{% if f.extname == '.jpg' or f.extname == '.jpeg' or f.extname == '.png' or f.extname == '.gif' or f.extname == '.webp' %}
+					<a class="thumb" href="{{ f.path | relative_url }}" data-full="{{ f.path | relative_url }}" role="button" aria-label="Abrir imagen {{ forloop.index }}">
+						<img src="{{ f.path | relative_url }}" alt="{{ page.title | default: id }} screenshot {{ forloop.index }}" loading="lazy" decoding="async">
+					</a>
+					{% endif %}
+				{% endfor %}
+				</div>
+
+				<div class="lightbox" id="lightbox-about-me-logos" hidden>
+					<button class="close" aria-label="Cerrar">&times;</button>
+					<img alt="Screenshot" src="">
+				</div>
+
+				</div>
+
+				<script src="{{ '/assets/js/screenshot-gallery.js' | relative_url }}"></script>
+
+			</div>
+		</div>
+	</div>
+</section>
+
+{% include f_call_to_action.html %}
+

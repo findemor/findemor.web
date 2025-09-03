@@ -1,0 +1,126 @@
+---
+layout: default
+header_image: "assets/images/cursos/curso-godot-banner-header.png"
+title: "Curso gratis de Godot 4 desde cero"
+permalink: "/curso-godot-4-gratis.html"
+bio: "Roadmap formativo del curso"
+description: "Curso tutorial gratuito - cómo hacer videojuegos con Godot 4, con vídeos y ejemplos paso a paso."
+---
+<div class="curso">
+<section class="about-banner" style="background-image:url({{page.header_image | relative_path }});">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8">
+        <h1 class="text-color">Curso gratis de Godot 4 <br>desde cero</h1>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section rm-section">
+  <div class="container">
+    <div class="row mb-3">
+      <div class="col-lg-12">
+        <div class="rm-subtitle">Punto de partida</div>
+        <h3 class="rm-title">Fundamentos de desarrollo de videojuegos con Godot 4</h3>
+        <p class="rm-note">
+          Te recomiendo empezar <strong>por esta lección</strong>.<br> 
+          Con ella tendrás una visión general de tu camino de aprendizaje,
+           de la filosofía de Godot y sus conceptos principales, 
+           y estarás preparado para empezar a trastear en tus propios videojuegos.</p>
+      </div>
+    </div>
+
+    <div class="cards-grid">
+
+      {% assign fundamentos = site.data.curso-godot-4-gratis | where: "id", "fundamentos" | first %}
+      {% for leccion in fundamentos.lecciones %}
+        {% include f_curso_leccion.html leccion=leccion %}
+      {% endfor %}
+
+
+      <!-- Espaciador visual para mantener ritmo de cuadrícula -->
+      <div></div>
+    </div>
+
+    <div class="rm-divider"></div>
+
+      <div class="row mb-3">
+        <div class="col-lg-12">
+          <div class="rm-subtitle">A continuación...</div>
+          <h3 class="rm-title">Profundiza en los conceptos y herramientas de Godot 4</h3>
+          <p class="rm-note">
+            A partir de aquí el camino se divide en dos ramas: <strong>programación y uso del motor</strong> de videojuegos.<br>
+            Te recomiendo ir completando las lecciones según las necesites. 
+            Es decir, trata de experimentar con el motor tu mismo, 
+            y acude a las lecciones cuando te sientas bloqueado en alguno de los temas 
+            o quieras mejorar tu comprensión del tema: <br>La experiencia propia, y enfrentarse a problemas reales, son fundamentales para asentar el conocimiento.</p>
+      </div>
+    </div>
+
+    <!-- Ramas -->
+    <div class="row branches">
+
+
+      <!-- Rama: Motor -->
+      <div class="col-lg-6 mb-5">
+        <div class="branch-panel" style="--c:#10b981;--bg:rgba(16,185,129,.06)">
+          <div class="rm-branch" style="--c:#10b981">
+            <span class="rm-dot"></span>
+            <h4>Rama de Motor</h4>
+          </div>
+          <div class="cards-grid">
+            {% assign motor = site.data.curso-godot-4-gratis | where: "id", "rama-motor" | first %}
+            {% for leccion in motor.lecciones %}
+              {% include f_curso_leccion.html leccion=leccion %}
+            {% endfor %}
+            {% include f_curso_leccion_proximamente.html %}
+          </div>
+        </div>
+      </div>
+
+      <!-- Rama: Programación -->
+      <div class="col-lg-6 mb-5">
+        <div class="branch-panel" style="--c:#3b82f6;--bg:rgba(59,130,246,.06)">
+          <div class="rm-branch" style="--c:#3b82f6">
+            <span class="rm-dot"></span>
+            <h4>Rama de Programación</h4>
+          </div>
+          <div class="cards-grid">
+            {% assign programacion = site.data.curso-godot-4-gratis | where: "id", "rama-programacion" | first %}
+            {% for leccion in programacion.lecciones %}
+              {% include f_curso_leccion.html leccion=leccion %}
+            {% endfor %}
+            {% include f_curso_leccion_proximamente.html %}
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="rm-divider"></div>
+
+    <!-- Cierre / siguientes pasos -->
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="rm-subtitle">Siguientes pasos</div>
+        <h3 class="rm-title">¿Y ahora qué?</h3>
+        <p class="rm-note">
+          Primero, déjame <strong>felicitarte por llegar hasta aquí.</strong></p>
+        <p class="rm-note">
+          Aunque aún queda mucho por saber (y de hecho el aprendizaje nunca termina), 
+          con lo que has visto hasta ahora deberías saber suficiente como para empezar
+          a hacer tus primeros prototipos y pequeños videojuegos.</p>
+        <p class="rm-note">Mientras esperamos a que haya nuevas lecciones, deberías:</p>
+        <ul>
+          <li>Experimentar y hacer cosas por ti mismo. Enfrentar problemas es esencial para afianzar el conocimiento.</li>
+          <li>Si te surgen dudas, consulta de nuevo las lecciones, o <a href="{{ site.data.content.community.join_free_url }}">únete a la comunidad</a> para <strong>recibir una invitación a Discord</strong>, donde podrás hacer preguntas y recibir ayuda. </li>
+          <li>Además <a href="{{ site.data.content.community.join_free_url }}">al unirte</a> recibirás notificaciones cuando añada nuevas lecciones al curso, y podrás proponer temas para próximos vídeos.</li>
+          <li>Tambien puedes ojear el <a href="{{ site.data.content.community.youtube_url }}">canal de Youtube</a>, allí encontrarás más videos cortos con tutoriales temáticos, consejos, trucos y curiosidades de Godot que te pueden ayudar a aprender más sobre este estupendo motor de videojuegos.</li>
+        </ul> 
+        <p class="rm-note">Sea el que sea el camino que escojas, te deseo éxito en tus proyectos. <strong>¡Mucha suerte!</strong></p>
+      </div>
+    </div>
+  </div>
+</section>
+</div>
+{% include f_call_to_action.html %}

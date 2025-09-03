@@ -1,0 +1,17 @@
+User-agent: *
+Allow: /
+
+User-agent: *
+Disallow: /404.html
+
+User-agent: *
+Disallow: /privacy-policy.html
+
+User-agent: *
+Disallow: /contact-gracias.html
+
+User-agent: *
+Disallow: /host/
+
+
+Sitemap: https://www.findemor.es/sitemap.xml

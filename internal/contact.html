@@ -1,0 +1,46 @@
+---
+layout: default
+header_image: "/assets/images/bg/bg-recurso.jpg"
+title: "Contacto – findemor gamedev"
+permalink: "/contact.html"
+description: "Escríbeme para dudas, colaboraciones, soporte de Godot o propuestas."
+---
+
+{% include f_page_header_slim.html %}
+
+<section class="contact-form-wrap section section-slim">
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-lg-10 mt-4">
+				<div class="contact-form">
+					<h3 class="mb-4 font-weight-bold">Escríbeme</h3>
+					<form class="contact__form" method="post" action="{{site.contact_form_action}}">
+						<!-- FormSubmit fields -->
+						<input type="hidden" name="_subject" value="Mensaje desde el formulario de contacto - {{ site.url }}">
+						<input type="hidden" name="_next" value="{{ '/contact-gracias.html' | relative_url }}">
+						<input type="hidden" name="_template" value="table">
+						<input type="hidden" name="_captcha" value="false">
+						<!-- Honeypot -->
+						<input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+						<div class="row">
+							<div class="col-lg-6">
+								<div class="form-group">
+									<input class="form-control" type="text" name="name" id="name" placeholder="Tu nombre*" required>
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="form-group">
+									<input class="form-control" type="email" name="email" id="email" placeholder="Tu email*" required>
+								</div>
+							</div>
+							<div class="col-12">
+								<textarea class="form-control mt-3 mb-4" name="message" id="message" cols="30" rows="6" placeholder="Cuéntame qué necesitas o en qué puedo ayudarte :)."></textarea>
+								<button type="submit" class="btn btn-primary" value="Enviar mensaje">Enviar mensaje</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

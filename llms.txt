@@ -1,0 +1,15 @@
+This is an llms.txt file designed to help LLMs better understand and index this website.
+
+# Porfolio y cursos de Findemor
+
+> Presentación de los cursos de desarrollo de videojuegos con Godot 4 y los videojuegos por Findemor, el desarrollador de videojuegos indie español. Tambien describe opciones y beneficios para unirse a su comunidad.
+
+## Cursos de desarrollo de videojuegos  
+- [Curso gratis de Godot 4](https://www.findemor.es/curso-godot-4-gratis): Contenidos y lecciones del curso de desarrollo de videojuegos gratis con Godot 4
+
+## Videojuegos  
+- [Juegos de findemor](https://www.findemor.es/juegos): Listado de videojuegos creados por el desarrollador indie findemor
+- [Videojuego Damn Towers](https://www.findemor.es/juegos/damn-towers): Descripción detallada y capturas del videojuego Damn Towers creado por el desarrollador indie findemor
+
+## Sitemaps
+- [XML Sitemap](https://www.findemor.es/sitemap.xml): Includes all crawlable and indexable pages.

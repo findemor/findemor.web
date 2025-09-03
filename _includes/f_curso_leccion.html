@@ -1,0 +1,23 @@
+<article class="rm-card">
+  <a href="https://youtu.be/{{ include.leccion.youtube_id }}" target="_blank" rel="noopener">
+    <img class="rm-img"
+         src="https://img.youtube.com/vi/{{ include.leccion.youtube_id }}/hqdefault.jpg"
+         alt="{{ include.leccion.title }}">
+  </a>
+  <div class="rm-body">
+    <div class="rm-meta">DURACIÓN: {{ include.leccion.duration }}</div>
+    <h4 class="rm-h4">
+      <a href="https://youtu.be/{{ include.leccion.youtube_id }}" target="_blank" rel="noopener">
+        {{ include.leccion.title }}
+      </a>
+    </h4>
+    <p class="rm-desc">{{ include.leccion.description }}</p>
+    {% if include.leccion.points %}
+    <ul class="rm-points">
+      {% for p in include.leccion.points %}
+      <li>{{ p }}</li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+  </div>
+</article>

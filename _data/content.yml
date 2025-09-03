@@ -1,0 +1,16 @@
+######################### Hero Area ##############################
+hero_area:
+  background_image : "/assets/images/bg/banner-2.png"
+  title: "Hola, soy Finde"
+  subtitle : "Mi objetivo es crear videojuegos y compartir contigo todo lo que sé, para que tú también puedas hacerlo."
+  content : "Suscríbete a mi Patreon gratuito y empieza a recibir tutoriales, consejos, ejemplos reales y acceso a la comunidad en Discord."
+  image : "/assets/images/banner/banner-img-2.png"
+  button:
+    enable : true
+    label : "Vale, ¡vamos allá!"
+
+community:
+  youtube_subs: "30.000"
+  join_free_url: "https://patreon.com/findemor"
+  youtube_url: "https://www.youtube.com/findemor"
+  discord_invite_url: "https://discord.gg/AyCvNPMBcM"

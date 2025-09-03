@@ -1,0 +1,12 @@
+# {{ page.title }}
+
+<ul class="pill-list">
+<li class="pill">{{ page.category }}</li>
+{% for tag in page.tags %}
+  <li class="pill">{{ tag }}</li>
+{% endfor %}
+</ul>
+
+![{{ page.title }} banner]({{ page.banner | relative_url }})
+
+> {{ page.description }}
