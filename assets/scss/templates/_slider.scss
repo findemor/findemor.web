@@ -43,7 +43,7 @@
       padding: 150px 0 100px 0;
     }
 
-    h2 {
+    h2, h1.h1h2 {
       font-size: 50px;
       line-height: 70px;
       @include desktop-lg {
@@ -53,10 +53,16 @@
     }
   }
 
-  p {
+  p, h2.h2p {
     color: rgba(255, 255, 255, 1);
     padding-right: 55px;
     font-size: 20px;
+  }
+
+  h2.h2p {
+    line-height: 26px;
+    font-weight: 400;
+    font-family: "Open Sans", sans-serif;
   }
 
   .btn:hover {

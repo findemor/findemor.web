@@ -1,6 +1,6 @@
 #baseurl: "/dizer-jekyll" # the subpath of your site, e.g. /blog
 url: "https://www.findemor.es" # the base hostname & protocol for your site, e.g. http://example.com or  https://Dizerjk.netlify.com
-title: "findemor gamedev"
+title: "findemor gamedev - Aprende a crear videojuegos con Godot 4"
 email: "contacto@findemor.es"
 #phone: "+21 123 456 5523"
 #address: "9567 Turner Trace Apt. 466 North Willie, BC C3G8A4"
