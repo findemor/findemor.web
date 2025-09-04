@@ -12,8 +12,10 @@ description: "Escríbeme para dudas, colaboraciones, soporte de Godot o propuest
 		<div class="row justify-content-center">
 			<div class="col-lg-10 mt-4">
 				<div class="contact-form">
-					<h3 class="mb-4 font-weight-bold">Escríbeme</h3>
-					<form class="contact__form" method="POST" action="{{site.contact_form_action}}">
+					<span class="h5 text-color-dark text-uppercase pri-title">
+						Escríbeme
+					</span>
+					<form class="contact__form" method="POST" action="{{site.contact_form_action}}"  style="padding-top: 60px;">
 						<!-- FormSubmit fields -->
 						<input type="hidden" name="_subject" value="Mensaje desde el formulario de contacto - {{ site.url }}">
 						<input type="hidden" name="_next" value="https://www.findemor.es/contact-gracias.html">

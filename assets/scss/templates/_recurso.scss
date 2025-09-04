@@ -93,7 +93,8 @@
   }
 
   .btn.active {
-    color: $primary-color;
+    color: $hero-color;
+    text-decoration: underline;;
   }
 
 }

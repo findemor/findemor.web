@@ -65,6 +65,22 @@
   }
 }
 
+
+.btn-outline-primary-backwhite {
+    background: $secondary-color !important;
+    border-color: $secondary-color !important;
+    color: $white !important;
+
+  &:hover,
+  &:active,
+  &.focus,
+  &.active {
+    background: $primary-color !important;
+    color: $dark-color !important;
+    border-color: $secondary-color !important;
+  }
+}
+
 .btn-solid-border {
   border: 2px solid $border-color;
   color: $black;
@@ -80,7 +96,7 @@
 }
 
 .btn.btn-outline-light:hover {
-  color: $hero-color !important;   /* texto oscuro */
-  background-color: $white; /* fondo blanco */
-  border-color: $hero-color;
+  color: $dark-color !important;   /* texto oscuro */
+  background-color: $primary-color; /* fondo blanco */
+  border-color: $primary-color;
 }

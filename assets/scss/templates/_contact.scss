@@ -18,13 +18,19 @@
 	}
 }
 
+.contact-form {
+	span.h5 {
+		font-size: 40px;
+	}
+}
+
 .home-lastcta{
 	//background: url("../images/bg/bg-7.jpg")center center no-repeat;
 	background-color: $hero-color;
 	background-size: cover;
 
 	span.h5 {
-		font-size: 24px;
+		font-size: 40px;
 	}
 
 	p {

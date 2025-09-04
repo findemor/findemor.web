@@ -3,7 +3,7 @@
   <div class="container">
     <div class="row games">
       <div class="col-lg-10">
-        <span class="h5 text-color-hero text-uppercase">
+        <span class="h5 text-color-hero text-uppercase pri-title">
           Mis juegos
         </span>
         <h3 class="mb-4 mt-2">Hago juegos con Godot 4, y <strong>comparto todo el proceso</strong> detrás de cada uno. <br>Aquí puedes ver mis últimos proyectos, probarlos o descubrir como los hice. <br>Comparto todo, desde los desafíos técnicos y emocionales, hasta las descargas y los ingresos, <strong>con total transparencia</strong>. </h3>
@@ -14,7 +14,7 @@
       <div class="btn-group btn-group-toggle " data-toggle="buttons">
 
         <label class="btn border-0 active">
-          <input type="radio" name="shuffle-filter" value="all" checked="checked" />Todos
+          <input type="radio" name="shuffle-filter" value="all" checked="checked" />Sin filtro
         </label>
         {% assign categories = site.juegos| map: 'categories' | join: ',' | split: ',' | uniq %}
         {% for category in categories %}
@@ -24,7 +24,7 @@
         </label>
         {% endfor %}
       </div>
-      <a href="{{ '/juegos.html' | relative_url }}" class="btn btn-outline-primary">Juegos</a>
+      <a href="{{ '/juegos.html' | relative_url }}" class="btn btn-outline-primary-backwhite">Ver todos</a>
     </div>
 
     <div class="row shuffle-wrapper recurso-gallery" data-limit="3">

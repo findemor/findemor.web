@@ -6,8 +6,8 @@
       <div class="overlay-box">
         <div class="overlay-inner">
           <a class="overlay-content text-center" href="{{juego.url | relative_url }}">
-            <h5 class="mb-0 text-white">{{juego.title}}</h5>
-            <p>{% for category in juego.categories %} {{category}}{% unless forloop.last %} , {% endunless %} {% endfor %}</p>
+            <h5 class="mb-0 text-color-hero">{{juego.title}}</h5>
+            <p class="text-color-hero">{% for category in juego.categories %} {{category}}{% unless forloop.last %} , {% endunless %} {% endfor %}</p>
           </a>
         </div>
       </div>

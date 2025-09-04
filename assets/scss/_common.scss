@@ -30,7 +30,7 @@
 }
 
 .text-color-hero {
-	color: $hero-color;
+	color: $hero-color !important;
 }
 
 .text-color-dark {
@@ -94,3 +94,12 @@ a:focus {
 	}
 }
 
+.pri-title {
+	letter-spacing: -2px;
+	font-weight: 550;
+}
+
+.ter-title {
+	font-size: 20px;
+	text-transform: uppercase;
+}
