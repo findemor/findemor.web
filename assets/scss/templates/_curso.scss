@@ -34,12 +34,16 @@
     .rm-divider { height:1px; background: #eef2f7; margin: 28px 0; }
     .rm-branch { display:flex; align-items:center; gap:12px; margin: 8px 0 16px; }
     .rm-dot { width: 14px; height: 14px; border-radius: 50%; background: var(--c,#3b82f6); border: 2px solid #fff; box-shadow: 0 0 0 2px var(--c,#3b82f6); }
-    .rm-branch h4 { margin:0; font-size: 16px; color: #374151; text-transform: uppercase; letter-spacing: .06em; }
+    .rm-branch h4 { margin:0; font-size: 20px; font-weight: 500; color: $dark-color; text-transform: uppercase; letter-spacing: -1px;  }
 
     /* Paneles por rama y separador vertical para claridad */
     .branches { position: relative; }
     @media (min-width: 992px) {
         .branches:before { content: ""; position: absolute; top: -8px; bottom: -8px; left: 50%; width: 1px; background: #eef2f7; transform: translateX(-50%); }
+    }
+    div.branch {
+        padding-right: 20px;
+        padding-left: 20px;
     }
     .branch-panel { border: 1px solid #e5e7eb; border-radius: 12px; padding: 16px; background: var(--bg,#fcfcfd); box-shadow: 0 -3px 0 var(--c,#3b82f6) inset; }
     .branch-panel .cards-grid { margin-top: 10px; }
@@ -53,10 +57,12 @@
     }
 
     h1 {
-        padding: 60px 0px 0px 0px;
+        height: 280px;
+        display: flex;
+        align-items: flex-end; /* pega el texto al fondo */
+        margin: 0;            /* quita márgenes por defecto */
+        /*padding: 60px 0px 0px 0px;*/
         text-transform:none;
-        max-width: 450px;
-        font-size: 50px;
     }
     
    
