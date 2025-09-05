@@ -56,16 +56,33 @@
 // Recurso
 // 
 .recurso-2,
+.classic,
 .recurso-5 {
 
+  .c-title {
+      font-size: 40px;
+  }
+
+  .c-subtitle {
+      font-size: 20px;
+      line-height: normal;
+      color: #222530;
+      font-weight: 500;
+      margin-top: 30px;
+
+  }
+
   .games {
-    span.h5 {
+    h5, span.h5 {
       font-size: 40px;
     }
 
     h3 {
       font-size: 20px;
       line-height: normal;
+      color: #222530;
+      font-weight: 500;
+      margin-top: 30px;
     }
   }
 

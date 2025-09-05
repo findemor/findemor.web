@@ -5,6 +5,7 @@ hero_area:
   subtitle : "Mi objetivo es crear videojuegos y compartir contigo todo lo que sé, para que tú también puedas hacerlo."
   content : "Suscríbete a mi Patreon gratuito y empieza a recibir tutoriales, consejos, ejemplos reales y acceso a la comunidad en Discord."
   image : "/assets/images/banner/banner-img-2.png"
+  image_about: "/assets/images/bg/about-bg.jpg"
   button:
     enable : true
     label : "Vale, ¡vamos allá!"

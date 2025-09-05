@@ -14,7 +14,7 @@
     /* Estilos embebidos, solo para esta página */
     .rm-section { padding-top: 48px; padding-bottom: 16px; }
     .rm-subtitle { font-size: 24px; text-transform: uppercase; color: $primary-color; margin: 0 0 12px; line-height: 34px; font-weight: 500;}
-    .rm-title { font-size: 28px; font-weight: 800; margin: 0 0 16px; color: #111827; }
+    .rm-title { font-size: 28px; font-weight: 800; margin: 0 0 16px; color: $dark-color }
     .rm-note, li { color: #6b7280; margin-bottom: 24px; }
 
     /* Rejilla con ancho mínimo mayor para evitar tarjetas estrechas */
@@ -26,7 +26,7 @@
     .rm-img { display:block; width:100%; aspect-ratio: 16/9; object-fit: cover; background: #f3f4f6; }
     .rm-body { padding: 16px 16px 14px; }
     .rm-meta { color:$hero-color; font-weight:700; font-size:12px; letter-spacing:.06em; text-transform:capitalize; margin-bottom: 6px; }
-    .rm-h4 { font-size: 20px; font-weight: 800; margin: 0 0 6px; color: #111827; line-height: 1.25; }
+    .rm-h4 { font-size: 20px; font-weight: 800; margin: 0 0 6px; color: $dark-color; line-height: 1.25; }
     .rm-desc { font-size: 14px; color: #374151; margin: 6px 0 10px; }
     .rm-points { margin: 0; padding-left: 18px; color: #4b5563; font-size: 13px; }
     .rm-points li { margin: 4px 0; }
