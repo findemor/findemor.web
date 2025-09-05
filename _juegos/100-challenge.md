@@ -9,7 +9,6 @@ thumbnail: "/assets/juegos/100-challenge/100_challenge_icon_512.png"
 description: "Arcade de acción. ¡CAPTURA enemigos de tu color y ESQUIVA al resto para ser el mejor del mundo! Rápido, adictivo y 100% desafiante."
 ---
 
-{% include f_juego_header.html %}
 
 ## Game Summary
 
@@ -18,6 +17,7 @@ description: "Arcade de acción. ¡CAPTURA enemigos de tu color y ESQUIVA al res
 * Completa la barra de progreso 10 veces para superar los 10 niveles y obtener la máxima recompensa. Hacerlo en poco tiempo y sin recibir daño te dará la puntuación más alta.
 * En cada intento conseguirás puntos de progreso que podrás usar para adquirir nuevas habilidades y llegar cada vez más lejos.
 
+{% include f_juego_screenshots.html %}
 
 ## Game Outline
 
@@ -52,7 +52,6 @@ El Ultimate Challenge es un modo de juego especial donde puedes configurar qué 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/xC37P-TsRfY?si=vb4nPscUf-W_8tns" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-{% include f_juego_screenshots.html %}
 
 ## Devlogs
 

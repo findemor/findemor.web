@@ -57,7 +57,7 @@
     }
 
     h1 {
-        height: 280px;
+        min-height: 280px;
         display: flex;
         align-items: flex-end; /* pega el texto al fondo */
         margin: 0;            /* quita márgenes por defecto */

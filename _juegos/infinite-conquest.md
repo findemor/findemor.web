@@ -9,7 +9,6 @@ thumbnail: "/assets/juegos/infinite-conquest/infinite-conquest-pd-card.png"
 description: "Conquista territorios usando la menor cantidad de recursos. Defiende cada palmo de terreno a golpe de palanca en este juego diseñado para Playdate."
 ---
 
-{% include f_juego_header.html %}
 
 ## Game Summary
 
@@ -22,6 +21,8 @@ Ahora que has sido nombrado Rey y con esta nueva tecnología a tu alcance, es ho
 Pero ten en cuenta que la reconstrucción de tantos territorios será cara, así que deberás defender cada palmo de terreno empleando sabias tácticas y demostrando tu habilidad, ya que quién conquiste más terreno con empleando el menor número de recursos, será el Rey que se impondrá.
 
 <!--<a href="{{ '/game/infinite-conquest-scoreboard' | relative_url }}" class="btn btn-outline-light">VER EL ESTADO DEL REINO</a>-->
+
+{% include f_juego_screenshots.html %}
 
 ## Game Outline
 
@@ -38,8 +39,6 @@ Infinite Conquest es un juego diseñado para Playdate, una consola divertida, co
 ## Descarga
 
 En desarrollo (pausado, sin fecha de lanzamiento prevista).
-
-{% include f_juego_screenshots.html %}
 
 ## Devlogs
 

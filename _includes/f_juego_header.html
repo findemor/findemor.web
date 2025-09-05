@@ -1,12 +1,16 @@
-# {{ page.title }}
-
-<ul class="pill-list">
-<li class="pill">{{ page.category }}</li>
-{% for tag in page.tags %}
-  <li class="pill">{{ tag }}</li>
-{% endfor %}
-</ul>
-
-![{{ page.title }} banner]({{ page.banner | relative_url }})
-
-> {{ page.description }}
+<section class="juego-header classic" style="padding: 60px 0px 0px 0px;">
+	<div class="container">
+		<div class="row">
+      
+			<div class="col-lg-5 col-md-5 align-self-end">
+				<img src="{{ page.thumbnail | relative_url }}" alt="" class="img-fluid position-absolute-">
+			</div>
+      <div class="col-lg-7">
+        <blockquote>
+          <p>{{ page.description }}</p>
+        </blockquote>
+      </div>
+      
+    </div>
+  </div>
+</section>

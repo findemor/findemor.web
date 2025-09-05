@@ -121,6 +121,28 @@
 	}
 }
 
+.page-header-section {
+	padding: 150px 0px 100px 0px;
+}
+
+// Hero overlay for page headers (20% of $hero-color)
+.page-header-section.has-hero-overlay {
+  position: relative;
+}
+
+.page-header-section.has-hero-overlay::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba($hero-dark-color, 0.8);
+  z-index: 0; // behind content
+}
+
+.page-header-section.has-hero-overlay > * {
+  position: relative;
+  z-index: 1; // keep content above overlay
+}
+
 .text-black{
 	color: $black;
 }

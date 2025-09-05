@@ -9,13 +9,14 @@ thumbnail: "/assets/juegos/moon-fol/moon-fol-card.png"
 description: "Usa la máquina F.O.L. para programar misiles automatizados y devolver la Luna al cielo. Un puzzle cozy con múltiples soluciones."
 ---
 
-{% include f_juego_header.html %}
 
 ## Game Summary
 
 Era una noche apacible... hasta que tocaste donde no debías y la Luna cayó del cielo. Ahora toca reparar el firmamento a misilazos.
 
 Usa la máquina F.O.L. (Frenetical Orbital Launcher) para diseñar misiles automatizados que empujen la Luna de vuelta a su lugar y restaurar el cielo nocturno. Puedes buscar el disparo perfecto que lo resuelva todo con un solo cohete, o volverte loco lanzando muchos misiles con comandos simples hasta elevarla.
+
+{% include f_juego_screenshots.html %}
 
 ## Game Outline
 
@@ -39,8 +40,6 @@ Prototipo creado para la Indie Spain Jam 2023, y nuestro primer proyecto en Godo
 ## Descarga
 
 * [ITCH.IO](https://findemor.itch.io/moon-fol) — HTML5, Windows, macOS, Linux
-
-{% include f_juego_screenshots.html %}
 
 ## Devlog
 

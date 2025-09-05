@@ -111,8 +111,36 @@
 
 ///// posts y juegos
 
+.page-header-section {
 
-.juego-content, .about-gallery {
+		
+	// Inline pill list for categories/tags
+	.pill-list {
+		list-style: none;
+		//padding: 0px 0px 60px 0px;
+		padding: 0px;
+		margin: 0 0 1rem 0;
+		display: flex;
+		flex-wrap: wrap;
+		gap: 8px;
+	}
+
+	.pill-list .pill {
+		display: inline-block;
+		background: $dark-color;
+		color: $white;
+		border-radius: 5px;
+		padding: 2px 10px;
+		font-size: 0.875rem;
+		line-height: 1.6;
+		white-space: nowrap;
+		text-transform: uppercase;
+	}
+
+}
+
+
+.juego-content, .juego-header, .about-gallery {
 
 	padding-bottom: 120px;
 
@@ -125,7 +153,6 @@
 
 	blockquote p {
 		width: 100%;
-		text-align: center;
 	}
 
 	h1 {
@@ -135,8 +162,11 @@
 
 	h2 {
 		padding: 60px 0px 30px 0px;
-		color: $primary-color;
-		font-size: 30px;
+		color: $hero-color;
+		font-size: 40px;
+		text-transform: uppercase;
+		letter-spacing: -2px;
+    	font-weight: 550;
 	}
 
 	h3 {
@@ -173,29 +203,6 @@
 			display: inline-block;       // hace que el cuadro se ajuste al contenido
 			margin: 0 auto;              // centra el bloque dentro del contenedor
 		}	
-	}
-
-		
-	// Inline pill list for categories/tags
-	.pill-list {
-		list-style: none;
-		padding: 0px 0px 60px 0px;
-		margin: 0 0 1rem 0;
-		display: flex;
-		flex-wrap: wrap;
-		gap: 8px;
-	}
-
-	.pill-list .pill {
-		display: inline-block;
-		background: $dark-color;
-		color: $white;
-		border-radius: 5px;
-		padding: 2px 10px;
-		font-size: 0.875rem;
-		line-height: 1.6;
-		white-space: nowrap;
-		text-transform: uppercase;
 	}
 
 	// galeria

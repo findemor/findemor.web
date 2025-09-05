@@ -2,39 +2,38 @@
 layout: default
 title: "Juegos de findemor"
 permalink: "/juegos.html"
+header_image: "/assets/images/bg/about-bg.jpg"
+header_title: "Mis juegos"
 description: "Portfolio de videojuegos: proyectos publicados, en desarrollo y experimentales."
 ---
 
-{% include f_page_header_slim.html %}
+{% include f_page_header.html %}
 
 <!-- Recurso  Start -->
-<section class="section recurso-2">
+<section class="section recurso-2 classic">
 	<div class="container">
-		<div class="row justify-content-center">
-			<div class="col-lg-10 text-center">
-				<span class="h5 ter-title">
-					Mis juegos
-				</span>
-				<h3 class="mb-5 mt-2">Algunos de mis juegos más recientes.</h3>
+		<div class="row">
+			<div class="col-lg-10">
+				<h3 class="sec-title">Algunos de mis juegos más recientes.</h3>
 			</div>
 		</div>
 
-    <div class="row align-items-center mb-5">
-      	<div class="col-12 text-center">
-	        <div class="btn-group btn-group-toggle " data-toggle="buttons">
-				<label class="btn border-0 active">
-					<input type="radio" name="shuffle-filter" value="all" checked="checked" />Todos
-				</label>
-				{% assign categories = site.juegos| map: 'categories' | join: ',' | split: ',' | uniq %}
-				{% for category in categories %}
-				<label class="btn border-0">
-				<input type="radio" name="shuffle-filter"
-					value="{{ category | downcase | slugify }}" />{{ category | capitalize }}
-				</label>
-				{% endfor %}
-	        </div>
-      </div>
-    </div>		
+		<div class="row align-items-center mb-5" style="margin-top: 30px;">
+			<div class="col-12 text-center">
+				<div class="btn-group btn-group-toggle " data-toggle="buttons">
+					<label class="btn border-0 active">
+						<input type="radio" name="shuffle-filter" value="all" checked="checked" />Todos
+					</label>
+					{% assign categories = site.juegos| map: 'categories' | join: ',' | split: ',' | uniq %}
+					{% for category in categories %}
+					<label class="btn border-0">
+					<input type="radio" name="shuffle-filter"
+						value="{{ category | downcase | slugify }}" />{{ category | capitalize }}
+					</label>
+					{% endfor %}
+				</div>
+		</div>
+		</div>		
     <div class="row shuffle-wrapper recurso-gallery">
       {% include juego_loop.html %}
     </div>

@@ -9,7 +9,6 @@ thumbnail: "/assets/juegos/damn-towers/damn-towers-card.png"
 description: "¡Agarra a tu rey y ponlo sobre una torre construida por ti! ¡A mayor altura, mayor gloria!"
 ---
 
-{% include f_juego_header.html %}
 
 ## Game Summary
 
@@ -22,6 +21,8 @@ Cansado de eso, Mundo decidió iniciar un viaje junto a su más fiel seguidor, F
 Fredo no tiene experiencia como minero ni como arquitecto, pero en este reino todos los materiales son sorprendemente perfectos (en términos de geometría), así que con su inquebrantable voluntad, mucho esfuerzo y un poco de pericia apilando bloques, quizá logre mostrar al mundo la gloria que su señor merece.
 
 ¿Logrará su objetivo?
+
+{% include f_juego_screenshots.html %}
 
 ## Game Outline
 
@@ -50,8 +51,6 @@ Juego para uno o dos jugadores en multijugador local.
 ## Trailer
 
 En desarollo. 
-
-{% include f_juego_screenshots.html %}
 
 ## Devlogs
 
